@@ -7,9 +7,9 @@ public class solutio
     String question2="What are the positive atoms?";
     String question3="What are the negative atoms?";
     
-    String answer1="";
-    String answer2="";
-    String answer3="";
+    String answer1="Iron";
+    String answer2="Protons";
+    String answer3="Electrons";
     
     int points=0;
     
@@ -19,6 +19,8 @@ public class solutio
     int userInput1 = scanner.next();
     
     if (userInput1.equals(answer1)){
+      points++;
+      System.out.println("");
     }
     
   }
