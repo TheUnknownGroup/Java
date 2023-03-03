@@ -13,7 +13,13 @@ public class solutio
     
     int points=0;
     
-    Scanner scanner = new Scanner();
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.println(question1);
+    int userInput1 = scanner.next();
+    
+    if (userInput1.equals(answer1)){
+    }
     
   }
 }
