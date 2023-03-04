@@ -21,9 +21,9 @@ public class solutio
     int userInputWelcome = scanner.next();
 
     if (userInputWelcome.equals(welcomeYes)){
-        System.out.println("You have picked 'Yes', you will now proceed to the questions area.");
+      System.out.println("You have picked 'Yes', you will now proceed to the questions area.");
     } else {
-      
+      System.out.println("You have picked 'No', you will not continue with the following questions.");  
     }
 
     System.out.println(question1);
