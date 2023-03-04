@@ -22,11 +22,10 @@ public class solutio
 
     if (userInputWelcome.equals(welcomeYes)){
       System.out.println("You have picked 'Yes', you will now proceed to the questions area.");
+      System.out.println(question1);
     } else {
       System.out.println("You have picked 'No', you will not continue with the following questions.");  
     }
-
-    System.out.println(question1);
     int userInput1 = scanner.next();
     
     if (userInput1.equals(answer1)){
