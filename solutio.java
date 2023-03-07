@@ -36,7 +36,7 @@ public class solutio
         System.out.println(line);
         System.out.println(question1);
       } else {
-        System.out.println("You have picked 'No', you will not continue with the following questions.");
+        System.out.println("You you didn't type 'Yes' so, you will not continue with the following questions. Thank you for taking the time to go to this survey.");
         System.exit(0);
       }
       String userInput1 = input.next();
