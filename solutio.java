@@ -45,7 +45,6 @@ public class solutio
         points++;
         System.out.println(correct);
       } else {
-        points--;
         System.out.println(wrongr);
       }
 
@@ -57,7 +56,6 @@ public class solutio
         points++;
         System.out.println(correct);
       } else {
-        points--;
         System.out.println(wrongr);
       }
       
@@ -69,7 +67,6 @@ public class solutio
         points++;
         System.out.println(correct);
       } else {
-        points--;
         System.out.println(wrongr);
       }
 
