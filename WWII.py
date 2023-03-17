@@ -50,4 +50,8 @@ points = 0
 line = '------'
 welcome = 'Welcome! Would you like to continue?'
 
-answer = input(str(questions[0]).lstrip('[\'').rstrip('\']'))
+ans1 = input(str(questions[0]).lstrip('[\'').rstrip('\']')+'\na) '+str(answer[0]).lstrip('[\'').rstrip('\']')+'\nb) '+str(answer[0]).lstrip('[\'').rstrip('\']'))
+if answer == 'b':
+    print('Correct!')
+    time.sleep(1)
+    print(line)
