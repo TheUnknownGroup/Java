@@ -46,3 +46,8 @@ definitions = ['the alliance of Germany, Italy, and Japan in WWII',
                'treaty ending WWI; required Germany to pay huge war reparations and establish the League of Nations',
                'Totalitarian dictator of the Soviet Union through WWII and created a powerful Soviet sphere of influence in Eastern Europe after the war',
                'British prime minister; he opposed the polciy of appeasement and led Great Britian through WWII']
+points = 0
+line = '------'
+welcome = 'Welcome! Would you like to continue?'
+
+answer = input(str(questions[0]).lstrip('[\'').rstrip('\']'))
