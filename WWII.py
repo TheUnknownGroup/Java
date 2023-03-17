@@ -1,0 +1,48 @@
+# WWII Vocab
+import time
+import os
+import subprocess
+import sys
+
+questions = ['The defintion of Axis Powers: ',
+             'The defintion of Allied Powers: ',
+             'The defintion of Facism: ',
+             'The defintion of Nazi Party: ',
+             'The defintion of Totalitarianism: ',
+             'The defintion of Appeasement: ',
+             'The defintion of Nationalism: ',
+             'The defintion of Communism: ',
+             'The defintion of Bolsheviks: ',
+             'The defintion of Vladimir Lenin: ',
+             'The defintion of Refute: ',
+             'The defintion of Opposition: ',
+             'The defintion of Socialism: ',
+             'The defintion of Vengence: ',
+             'The defintion of Adolf Hitler: ',
+             'The defintion of Woodrow Wilson: ',
+             'The defintion of League of Nations: ',
+             'The defintion of Isolationism: ',
+             'The defintion of Treaty Of Versailles: ',
+             'The defintion of Joseph Stalin: ',
+             'The defintion of Winston Churchill: ']
+definitions = ['the alliance of Germany, Italy, and Japan in WWII',
+               'the alliance formed between Britain, France, and Russia during WWI',
+               'a totalitarian system of government that focuses on the good of the state rather than on the good of the indiviual citizens',
+               'National Socialist Party; facist political part of Adolf Hitler governed on totalitarian lines and advocating German racial superiority',
+               'form of government in which the person or party in charge has absolute control over all aspects of life',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '',
+               '']
