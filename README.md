@@ -12,5 +12,4 @@ So far there is 3 java programs, there is the main.java file (it has the main ja
 # Python 
 You can find it here:
 [Python](https://github.com/xGpD/Java/tree/python)
-
-This is the area that has all of the python scripts.
+>This is the area that has all of the python scripts.
