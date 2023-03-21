@@ -265,7 +265,7 @@ def ask_questions():
         time.sleep(1)
         print(line)
     else:
-        print(f\n'Whoops, got that wrong. The Answer was c) {definitions[13]}')
+        print(f'\nWhoops, got that wrong. The Answer was c) {definitions[13]}')
         time.sleep(1)
         print(line)  
     ans15 = input(str(questions[14]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -385,13 +385,13 @@ def ask_questions():
         def retrys():
             retry = input('Would you like to retry?\n')
             if retry == 'Yes':
-                print('You will now restudy.')
+                print('You will now restart at the beginning.')
                 time.sleep(1)
                 while points < 10:
                     ask_questions()
                     break
             elif retry == 'yes':
-                print('You will now restudy.')
+                print('You will now restart at the beginning.')
                 time.sleep(1)
                 while points < 10:
                     ask_questions()
