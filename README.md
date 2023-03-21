@@ -7,7 +7,7 @@ Welcome! This is the github I created in order to store all of the Java, JavaScr
 
 You can find it here:
 [Java](https://github.com/xGpD/Java/tree/java)
->This is an area that has all of the java programs.
+>This is the area that has all of the java programs.
 
 So far there is 3 java programs, all of those can be found from the link [here](#java)
 
