@@ -1,8 +1,5 @@
 # WWII Vocab
 import time
-import os
-import subprocess
-import sys
 
 questions = ['> 1) The defintion of Axis Powers: ',
              '> 2) The defintion of Allied Powers: ',
