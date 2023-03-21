@@ -47,6 +47,12 @@ definitions = ['the alliance of Germany, Italy, and Japan in WWII',
                'treaty ending WWI; required Germany to pay huge war reparations and establish the League of Nations',
                'Totalitarian dictator of the Soviet Union through WWII and created a powerful Soviet sphere of influence in Eastern Europe after the war',
                'British prime minister; he opposed the polciy of appeasement and led Great Britian through WWII']
+qodQuestions = ['Which factor contributed most to the success of the Bolshevik Revolution of 1917 in Russia?']
+qodAnswers1 = ['a) The Russian people were discouraged with their losses in WWI.',
+              'b) The Allied powers favored the revolution.',
+              'c) The Czar was willing to abdicate.',
+              'd) The appeal of Marxism to the Russian nobility.']
+
 line = '------'
 welcome = '> Welcome! Would you like to continue?'
 tries = 'Would you like to retry to study more?'
@@ -73,13 +79,11 @@ def ask_questions():
                 +str(definitions[2]).lstrip('[\'').rstrip('\']')+'\n')
     if ans1 == 'b':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was b) {definitions[0]}')
+        print(f'\nWhoops, got that wrong. The Answer was b) {definitions[0]}')
         time.sleep(1)
         print(line)
     ans2 = input(str(questions[1]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -89,13 +93,11 @@ def ask_questions():
                 +str(definitions[20]).lstrip('[\'').rstrip('\']')+'\n')
     if ans2 == 'c':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was c) {definitions[1]}')
+        print(f'\nWhoops, got that wrong. The Answer was c) {definitions[1]}')
         time.sleep(1)
         print(line)
     ans3 = input(str(questions[2]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -105,13 +107,11 @@ def ask_questions():
                 +str(definitions[2]).lstrip('[\'').rstrip('\']')+'\n')
     if ans3 == 'd':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was d) {definitions[2]}')
+        print(f'\nWhoops, got that wrong. The Answer was d) {definitions[2]}')
         time.sleep(1)
         print(line)
     ans4 = input(str(questions[3]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -121,13 +121,11 @@ def ask_questions():
                 +str(definitions[15]).lstrip('[\'').rstrip('\']')+'\n')
     if ans4 == 'a':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was a) {definitions[3]}')
+        print(f'\nWhoops, got that wrong. The Answer was a) {definitions[3]}')
         time.sleep(1)
         print(line)  
     ans5 = input(str(questions[4]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -137,13 +135,11 @@ def ask_questions():
                 +str(definitions[8]).lstrip('[\'').rstrip('\']')+'\n')
     if ans5 == 'c':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was c) {definitions[4]}')
+        print(f'\n\nWhoops, got that wrong. The Answer was c) {definitions[4]}')
         time.sleep(1)
         print(line)  
     ans6 = input(str(questions[5]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -153,13 +149,11 @@ def ask_questions():
                 +str(definitions[2]).lstrip('[\'').rstrip('\']')+'\n')
     if ans6 == 'b':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was b) {definitions[5]}')
+        print(f'\nWhoops, got that wrong. The Answer was b) {definitions[5]}')
         time.sleep(1)
         print(line)  
     ans7 = input(str(questions[6]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -169,13 +163,11 @@ def ask_questions():
                 +str(definitions[6]).lstrip('[\'').rstrip('\']')+'\n')
     if ans7 == 'd':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was d) {definitions[6]}')
+        print(f'\nWhoops, got that wrong. The Answer was d) {definitions[6]}')
         time.sleep(1)
         print(line)  
     ans8 = input(str(questions[7]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -185,13 +177,11 @@ def ask_questions():
                 +str(definitions[19]).lstrip('[\'').rstrip('\']')+'\n')
     if ans8 == 'a':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was a) {definitions[7]}')
+        print(f'\nWhoops, got that wrong. The Answer was a) {definitions[7]}')
         time.sleep(1)
         print(line)  
     ans9 = input(str(questions[8]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -201,13 +191,11 @@ def ask_questions():
                 +str(definitions[10]).lstrip('[\'').rstrip('\']')+'\n')
     if ans9 == 'b':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was b) {definitions[8]}')
+        print(f'\nWhoops, got that wrong. The Answer was b) {definitions[8]}')
         time.sleep(1)
         print(line)  
     ans10 = input(str(questions[9]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -217,13 +205,11 @@ def ask_questions():
                 +str(definitions[14]).lstrip('[\'').rstrip('\']')+'\n')
     if ans10 == 'a':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was a) {definitions[9]}')
+        print(f'\nWhoops, got that wrong. The Answer was a) {definitions[9]}')
         time.sleep(1)
         print(line)  
     ans11 = input(str(questions[10]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -233,13 +219,11 @@ def ask_questions():
                 +str(definitions[10]).lstrip('[\'').rstrip('\']')+'\n')
     if ans11 == 'd':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was d) {definitions[10]}')
+        print(f'\nWhoops, got that wrong. The Answer was d) {definitions[10]}')
         time.sleep(1)
         print(line)  
     ans12 = input(str(questions[11]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -249,13 +233,11 @@ def ask_questions():
                 +str(definitions[9]).lstrip('[\'').rstrip('\']')+'\n')
     if ans12 == 'c':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was c) {definitions[11]}')
+        print(f'\nWhoops, got that wrong. The Answer was c) {definitions[11]}')
         time.sleep(1)
         print(line)  
     ans13 = input(str(questions[12]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -265,13 +247,11 @@ def ask_questions():
                 +str(definitions[15]).lstrip('[\'').rstrip('\']')+'\n')
     if ans13 == 'a':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was a) {definitions[12]}')
+        print(f'\nWhoops, got that wrong. The Answer was a) {definitions[12]}')
         time.sleep(1)
         print(line)  
     ans14 = input(str(questions[13]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -281,13 +261,11 @@ def ask_questions():
                 +str(definitions[8]).lstrip('[\'').rstrip('\']')+'\n')
     if ans14 == 'c':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was c) {definitions[13]}')
+        print(f\n'Whoops, got that wrong. The Answer was c) {definitions[13]}')
         time.sleep(1)
         print(line)  
     ans15 = input(str(questions[14]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -297,13 +275,11 @@ def ask_questions():
                 +str(definitions[6]).lstrip('[\'').rstrip('\']')+'\n')
     if ans15 == 'b':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was b) {definitions[14]}')
+        print(f'\nWhoops, got that wrong. The Answer was b) {definitions[14]}')
         time.sleep(1)
         print(line)  
     ans16 = input(str(questions[15]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -313,13 +289,11 @@ def ask_questions():
                 +str(definitions[15]).lstrip('[\'').rstrip('\']')+'\n')
     if ans16 == 'd':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was d) {definitions[15]}')
+        print(f'\nWhoops, got that wrong. The Answer was d) {definitions[15]}')
         time.sleep(1)
         print(line)  
     ans17 = input(str(questions[16]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -329,13 +303,11 @@ def ask_questions():
                 +str(definitions[15]).lstrip('[\'').rstrip('\']')+'\n')
     if ans17 == 'b':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was b) {definitions[16]}')
+        print(f'\nWhoops, got that wrong. The Answer was b) {definitions[16]}')
         time.sleep(1)
         print(line)  
     ans18 = input(str(questions[17]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -345,13 +317,11 @@ def ask_questions():
                 +str(definitions[7]).lstrip('[\'').rstrip('\']')+'\n')
     if ans18 == 'a':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was a) {definitions[17]}')
+        print(f'\nWhoops, got that wrong. The Answer was a) {definitions[17]}')
         time.sleep(1)
         print(line)  
     ans19 = input(str(questions[18]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -361,13 +331,11 @@ def ask_questions():
                 +str(definitions[2]).lstrip('[\'').rstrip('\']')+'\n')
     if ans19 == 'a':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was a) {definitions[18]}')
+        print(f'\nWhoops, got that wrong. The Answer was a) {definitions[18]}')
         time.sleep(1)
         print(line)  
     ans20 = input(str(questions[19]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -377,13 +345,11 @@ def ask_questions():
                 +str(definitions[11]).lstrip('[\'').rstrip('\']')+'\n')
     if ans20 == 'b':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was b) {definitions[19]}')
+        print(f'\nWhoops, got that wrong. The Answer was b) {definitions[19]}')
         time.sleep(1)
         print(line)
     ans21 = input(str(questions[20]).lstrip('[\'').rstrip('\']')+'\na) '
@@ -393,13 +359,25 @@ def ask_questions():
                 +str(definitions[20]).lstrip('[\'').rstrip('\']')+'\n')
     if ans21 == 'd':
         points += 1
-        print('')
-        print('Correct!')
+        print('\nCorrect!')
         time.sleep(1)
         print(line)
     else:
-        print('')
-        print(f'Whoops, got that wrong. The Answer was d) {definitions[20]}')
+        print(f'\nWhoops, got that wrong. The Answer was d) {definitions[20]}')
+        time.sleep(1)
+        print(line)
+    ansQod = input(str(qodQuestions[0]).lstrip('[\'').rstrip('\']')+'\n'
+                 +str(qodAnswers[0]).lstrip('[\'').rstrip('\']')+'\n'
+                 +str(qodAnswers[1]).lstrip('[\'').rstrip('\']')+'\n'
+                 +str(qodAnswers[2]).lstrip('[\'').rstrip('\']')+'\n'
+                 +str(qodAnswers[3]).lstrip('[\'').rstrip('\']')+'\n')
+    if ansQod == 'a':
+        points += 1
+        print('\nCorrect!')
+        time.sleep(1)
+        print(line)
+    else:
+        print(f'\nWhoops, got that wrong. The Answer was {qodAnswers[0]}')
         time.sleep(1)
         print(line)
     print(f'You have: {points} out of 20')
