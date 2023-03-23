@@ -416,7 +416,7 @@ def ask_questions():
         time.sleep(1)
         print(line)
     else:
-        print(f'\nWhoops, got that wrong. The Answer was ')
+        print(f'\nWhoops, got that wrong. The Answer was {qodAnswers3[2]}')
         time.sleep(1)
         print(line)
     ansQod3 = input(str(qodQuestions[3]).lstrip('[\'').rstrip('\']')+'\n'
@@ -430,7 +430,7 @@ def ask_questions():
         time.sleep(1)
         print(line)
     else:
-        print(f'\nWhoops, got that wrong. The Answer was ')
+        print(f'\nWhoops, got that wrong. The Answer was {qodAnswers4[3]}')
         time.sleep(1)
         print(line)
     print(f'You have: {points} out of 24')
