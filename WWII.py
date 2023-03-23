@@ -375,8 +375,7 @@ def ask_questions():
         print(f'\nWhoops, got that wrong. The Answer was d) {definitions[20]}')
         time.sleep(1)
         print(line)
-    print(f'Since you have finished the definitions portion with {points} points, you will now continue to '
-          'the QOD Questions. Loading may take a moment')
+    print(f'Since you have finished the definitions portion with {points} points, you will now continue to the QOD Questions. Loading may take a moment')
     time.sleep(5)
     ansQod = input(str(qodQuestions[0]).lstrip('[\'').rstrip('\']')+'\n'
                  +str(qodAnswers1[0]).lstrip('[\'').rstrip('\']')+'\n'
