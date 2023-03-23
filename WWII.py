@@ -44,11 +44,27 @@ definitions = ['the alliance of Germany, Italy, and Japan in WWII',
                'treaty ending WWI; required Germany to pay huge war reparations and establish the League of Nations',
                'Totalitarian dictator of the Soviet Union through WWII and created a powerful Soviet sphere of influence in Eastern Europe after the war',
                'British prime minister; he opposed the polciy of appeasement and led Great Britian through WWII']
-qodQuestions = ['> 1) Which factor contributed most to the success of the Bolshevik Revolution of 1917 in Russia?']
+qodQuestions = ['> 1) Which factor contributed most to the success of the Bolshevik Revolution of 1917 in Russia?',
+                '> 2) What treaty forced Germny to accept blame for WWI?',
+                '> 3) Which part of the Treaty of Versailles was was most damaging to the German economy?',
+                '> 4) Which major nation did not join the League of Nations?']
 qodAnswers1 = ['a) The Russian people were discouraged with their losses in WWI.',
               'b) The Allied powers favored the revolution.',
               'c) The Czar was willing to abdicate.',
               'd) The appeal of Marxism to the Russian nobility.']
+qodAnswers2 = ['a) Treaty of London',
+               'b) Treaty of Munich',
+               'c) Treaty of Versailles',
+               'd) Treaty of Rome']
+qodAnswers3 = ['a) Germany lost its colonies',
+               'b) the German emporer was to be put on trial',
+               'c) the Germans had to pay the Allies large sums of money',
+               'd) Germans were not allowed to have a large army and navy']
+qodAnswers4 = ['a) France',
+               'b) Britain',
+               'c) Italy',
+               'd) US']
+
 
 line = '------'
 welcome = '> Welcome! Would you like to continue?'
@@ -376,8 +392,50 @@ def ask_questions():
         print(f'\nWhoops, got that wrong. The Answer was {qodAnswers1[0]}')
         time.sleep(1)
         print(line)
-    print(f'You have: {points} out of 21')
-    if points < 10:
+    ansQod1 = input(str(qodQuestions[1]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers2[0]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers2[1]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers2[2]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers2[3]).lstrip('[\'').rstrip('\']')+'\n')
+    if ansQod1 == 'c':
+        points += 1
+        print('\nCorrect!')
+        time.sleep(1)
+        print(line)
+    else:
+        print(f'\nWhoops, got that wrong. The Answer was {qodAnswers2[2]}')
+        time.sleep(1)
+        print(line)
+    ansQod2 = input(str(qodQuestions[2]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers3[0]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers3[1]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers3[2]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers3[3]).lstrip('[\'').rstrip('\']')+'\n')
+    if ansQod2 == '':
+        points += 1
+        print('\nCorrect!')
+        time.sleep(1)
+        print(line)
+    else:
+        print(f'\nWhoops, got that wrong. The Answer was ')
+        time.sleep(1)
+        print(line)
+    ansQod3 = input(str(qodQuestions[3]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers4[0]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers4[1]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers4[2]).lstrip('[\'').rstrip('\']')+'\n'
+                   +str(qodAnswers4[3]).lstrip('[\'').rstrip('\']')+'\n')
+    if ansQod1 == '':
+        points += 1
+        print('\nCorrect!')
+        time.sleep(1)
+        print(line)
+    else:
+        print(f'\nWhoops, got that wrong. The Answer was ')
+        time.sleep(1)
+        print(line)
+    print(f'You have: {points} out of 24')
+    if points < 12:
         def retrys():
             retry = input('Would you like to retry?\n')
             if retry in ['Yes','yes','y','sure']:
@@ -390,7 +448,7 @@ def ask_questions():
                 print('Thanks for studying.')
                 exit()
         retrys()
-    elif points > 10:
+    elif points > 12:
         study = input('Would you like to continue studying?\n')
         if study in ['Yes','yes','y','sure']:
             print('You are now going to continue studying!')
