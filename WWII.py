@@ -19,7 +19,7 @@ questions = ['> 1) What was the Axis Powers?',
              '> 16) Who was Woodrow Wilson?',
              '> 17) What was the League of Nations?',
              '> 18) What is Isolationism?',
-             '> 19) What was the Treaty Of Versailles?',
+             '> 19) What is the Treaty Of Versailles?',
              '> 20) Who was Joseph Stalin?',
              '> 21) Who was Winston Churchill?']
 definitions = ['the alliance of Germany, Italy, and Japan in WWII',
