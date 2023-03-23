@@ -411,7 +411,7 @@ def ask_questions():
                    +str(qodAnswers3[1]).lstrip('[\'').rstrip('\']')+'\n'
                    +str(qodAnswers3[2]).lstrip('[\'').rstrip('\']')+'\n'
                    +str(qodAnswers3[3]).lstrip('[\'').rstrip('\']')+'\n')
-    if ansQod2 == '':
+    if ansQod2 == 'c':
         points += 1
         print('\nCorrect!')
         time.sleep(1)
@@ -425,7 +425,7 @@ def ask_questions():
                    +str(qodAnswers4[1]).lstrip('[\'').rstrip('\']')+'\n'
                    +str(qodAnswers4[2]).lstrip('[\'').rstrip('\']')+'\n'
                    +str(qodAnswers4[3]).lstrip('[\'').rstrip('\']')+'\n')
-    if ansQod1 == '':
+    if ansQod1 == 'd':
         points += 1
         print('\nCorrect!')
         time.sleep(1)
