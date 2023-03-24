@@ -20,7 +20,26 @@ answers = ['\'The Allied and Associated Governments affirm, and Germany accepts 
            'The Fourteen Points was a statement of principles for peace that was to be used for peace negotiations in order to end World War I.',
            'Germany had to pay over $33 Billion in Reparations or fines.',
            'The Treaty of Brest-Litovsk was a separate peace treaty signed on 3 March 1918 between Russia and the Central Powers, that ended Russia\'s participation in World War I.']
-
+qodQuestions = ['> 1) Which factor contributed most to the success of the Bolshevik Revolution of 1917 in Russia?',
+                '> 2) What treaty forced Germny to accept blame for WWI?',
+                '> 3) Which part of the Treaty of Versailles was was most damaging to the German economy?',
+                '> 4) Which major nation did not join the League of Nations?']
+qodAnswers1 = ['a) The Russian people were discouraged with their losses in WWI.',
+              'b) The Allied powers favored the revolution.',
+              'c) The Czar was willing to abdicate.',
+              'd) The appeal of Marxism to the Russian nobility.']
+qodAnswers2 = ['a) Treaty of London',
+               'b) Treaty of Munich',
+               'c) Treaty of Versailles',
+               'd) Treaty of Rome']
+qodAnswers3 = ['a) Germany lost its colonies',
+               'b) the German emporer was to be put on trial',
+               'c) the Germans had to pay the Allies large sums of money',
+               'd) Germans were not allowed to have a large army and navy']
+qodAnswers4 = ['a) France',
+               'b) Britain',
+               'c) Italy',
+               'd) US']
 line = '------'
 welcome = 'Welcome! Would you like to continue?'
 tries = 'Would you like to study more?'
@@ -153,8 +172,53 @@ def ask_questions():
         time.sleep(1)
     else:
         print(f'Whoops, got that wrong. The Answer was {answers[9]}\n{line}')
-    print(f'You have finished this studying session with {points} out of 10')
-    if points < 5:
+    print('You have now finished the definitions portion, you are now going to move onto the QOD questions.')
+    qodAns1 = input(str(qodQuestions[0]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers1[0]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers1[1]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers1[2]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers[13]).lstrip('[\'').rstrip('\']'))
+    if qodAns1 in ['a','A']:
+        points += 1
+        print(f'\nCorrect!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops got that wrong. The Answer was {qodAnswers1[0]}')
+    qodAns2 = input(str(qodQuestions[1]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers2[0]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers2[1]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers2[2]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers2[3]).lstrip('[\'').rstrip('\']'))
+    if qodAns1 in ['c','C']:
+        points += 1
+        print(f'\nCorrect!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops got that wrong. The Answer was {qodAnswers2[2]}')
+    qodAns3 = input(str(qodQuestions[2]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers3[0]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers3[1]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers3[2]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers3[3]).lstrip('[\'').rstrip('\']'))
+    if qodAns1 in ['c','C']:
+        points += 1
+        print(f'\nCorrect!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops got that wrong. The Answer was {qodAnswers3[2]}')
+    qodAns4 = input(str(qodQuestions[3]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers4[0]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers4[1]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers4[2]).lstrip('[\'').rstrip('\']')
+                   +str(qodAnswers4[3]).lstrip('[\'').rstrip('\']'))
+    if qodAns1 in ['d','D']:
+        points += 1
+        print(f'\nCorrect!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops got that wrong. The Answer was {qodAnswers4[3]}')
+    print(f'You have finished this studying session with {points} out of 14')
+    if points < 7:
         def retry():
             tries = input('Would you like to retry?\n')
             if tries in ['Yes','yes','y','sure']:
@@ -166,7 +230,7 @@ def ask_questions():
                 time.sleep(1)
                 exit()
         retry()
-    elif points > 5:
+    elif points > 7:
         reYes = input('Since you have gotten more then 5 points')
         if reYes in ['Yes','yes','y','sure']:
             print('You will now restart.')
