@@ -45,7 +45,7 @@ def ask_questions():
         points += 1
         print(f'\nCorrect!{time.sleep(1)}{line}')
     else:
-        print(f'\nWhoops, got that wrong. The Answer was {answers[0]}{time.sleep(1)}{line}')
+        print(str(f'\nWhoops, got that wrong. The Answer was ')+str({answers[0]})+str({time.sleep(1)})+str({line}))
     ans2 = input(str(questions[1]).lstrip('[\'').rstrip('\']')
                 +str(answers[9]).lstrip('[\'').rstrip('\']')+'\na) '
                 +str(answers[1]).lstrip('[\'').rstrip('\']')+'\nb) '
