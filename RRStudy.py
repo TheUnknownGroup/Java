@@ -84,27 +84,84 @@ def ask_questions():
     else:
         print(f'Whoops, got that wrong. The answer was {answers[3]}\n{line}')
         time.sleep(1)
-    ans4 = input(str(questions[4]).lstrip('[\'').rstrip('\']')+'\na) '
+    ans5 = input(str(questions[4]).lstrip('[\'').rstrip('\']')+'\na) '
                 +str(answers[6]).lstrip('[\'').rstrip('\']')+'\nb) '
                 +str(answers[4]).lstrip('[\'').rstrip('\']')+'\nc) '
                 +str(answers[9]).lstrip('[\'').rstrip('\']')+'\nd) '
                 +str(answers[2]).lstrip('[\'').rstrip('\']'))
-    if ans4 in ['b','B']:
+    if ans5 in ['b','B']:
         points += 1
         print(f'Correct!\n{line}')
         time.sleep(1)
     else:
         print(f'Whoops, got that wrong. The answer was {answers[4]}\n{line}')
         time.sleep(1)
-    ans4 = input(str(questions[5]).lstrip('[\'').rstrip('\']')+'\na) '
+    ans6 = input(str(questions[5]).lstrip('[\'').rstrip('\']')+'\na) '
                 +str(answers[2]).lstrip('[\'').rstrip('\']')+'\nb) '
                 +str(answers[4]).lstrip('[\'').rstrip('\']')+'\nc) '
                 +str(answers[7]).lstrip('[\'').rstrip('\']')+'\nd) '
                 +str(answers[5]).lstrip('[\'').rstrip('\']'))
-    if ans4 in ['d','D']:
+    if ans6 in ['d','D']:
         points += 1
         print(f'Correct!\n{line}')
         time.sleep(1)
     else:
-        print(f'Whoops, got that wrong. The answer was {answers[5]}\n{line}')
+        print(f'Whoops, got that wrong. The Answer was {answers[5]}\n{line}')
         time.sleep(1)
+    ans7 = input(str(questions[6]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[6]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[1]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[7]).lstrip('[\'').rstrip('\']')+'\nd) '
+                +str(answers[2]).lstrip('[\'').rstrip('\']'))
+    if ans7 in ['a','A']:
+        points += 1
+        print(f'Correct!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The Answer was {answers[6]}\n{line}')
+        time.sleep(1)
+    ans8 = input(str(questions[7]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[7]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[1]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[3]).lstrip('[\'').rstrip('\']')+'\nd)'
+                +str(answers[9]).lstrip('[\'').rstrip('\']'))
+    if ans8 in ['a','A']:
+        points += 1
+        print(f'Correct!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The Answer was {answers[7]}\n{line}')
+    ans9 = input(str(questions[8]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[1]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[4]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[8]).lstrip('[\'').rstrip('\']')+'\nd)'
+                +str(answers[2]).lstrip('[\'').rstrip('\']'))
+    if ans9 in ['c','C']:
+        points += 1
+        print(f'Correct!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The Answer was {answers[8]}\n{line}')
+    ans10 = input(str(questions[9]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[8]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[2]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[5]).lstrip('[\'').rstrip('\']')+'\nd)'
+                +str(answers[9]).lstrip('[\'').rstrip('\']'))
+    if ans10 in ['d','D']:
+        points += 1
+        print(f'Correct!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The Answer was {answers[9]}\n{line}')
+    print(f'You have finished this studying session with {points} out of 10')
+    if points < 5:
+        def retry():
+            tries = input('Would you like to retry?\n')
+            if tries in ['Yes','yes','y','sure']:
+                print('You will now restart the quiz.')
+                time.sleep(1)
+                ask_questions()
+    elif points > 5:
+        reYes = input('Since you have gotten more then 5 points')
+        if reYes in ['Yes','yes','y','sure']:
+            
