@@ -158,10 +158,15 @@ def ask_questions():
         def retry():
             tries = input('Would you like to retry?\n')
             if tries in ['Yes','yes','y','sure']:
-                print('You will now restart the quiz.')
+                print(f'You will now restart the quiz.\n{line}')
                 time.sleep(1)
                 ask_questions()
     elif points > 5:
         reYes = input('Since you have gotten more then 5 points')
         if reYes in ['Yes','yes','y','sure']:
-            
+            print('You will now restart.')
+            ask_questions()
+        else:
+            print('Thanks for studying!')
+            time.sleep(1)
+            exit()
