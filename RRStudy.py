@@ -220,7 +220,7 @@ def ask_questions():
     print(f'You have finished this studying session with {points} out of 14')
     if points < 7:
         def retry():
-            tries = input('Would you like to retry?\n')
+            retries = input(tries+'\n')
             if tries in ['Yes','yes','y','sure']:
                 print(f'You will now restart the quiz.\n{line}')
                 time.sleep(1)
