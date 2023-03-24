@@ -161,6 +161,11 @@ def ask_questions():
                 print(f'You will now restart the quiz.\n{line}')
                 time.sleep(1)
                 ask_questions()
+            else:
+                print(f'You will now stop here. Thanks for studying!')
+                time.sleep(1)
+                exit()
+        retry()
     elif points > 5:
         reYes = input('Since you have gotten more then 5 points')
         if reYes in ['Yes','yes','y','sure']:
@@ -170,3 +175,5 @@ def ask_questions():
             print('Thanks for studying!')
             time.sleep(1)
             exit()
+
+ask_questions()
