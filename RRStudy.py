@@ -41,13 +41,70 @@ def ask_questions():
                 +str(answers[5]).lstrip('[\'').rstrip('\']')+'\nb) '
                 +str(answers[10]).lstrip('[\'').rstrip('\']')+'\nc) '
                 +str(answers[0]).lstrip('[\'').rstrip('\']')+'\nd) ')
-    if ans1 == 'd':
+    if ans1 in ['d','D']:
         points += 1
-        print(f'\nCorrect!{time.sleep(1)}{line}')
+        print(f'\nCorrect!\n{line}')
+        time.sleep(1)
     else:
-        print(str(f'\nWhoops, got that wrong. The Answer was ')+str({answers[0]})+str({time.sleep(1)})+str({line}))
-    ans2 = input(str(questions[1]).lstrip('[\'').rstrip('\']')
-                +str(answers[9]).lstrip('[\'').rstrip('\']')+'\na) '
-                +str(answers[1]).lstrip('[\'').rstrip('\']')+'\nb) '
-                +str(answers[3]).lstrip('[\'').rstrip('\']')+'\nc) '
-                +str(answers[5]).lstrip('[\'').rstrip('\']')+'\nd) ')
+        print(f'\nWhoops, got that wrong. The Answer was {answers[0]}\n{line}')
+        time.sleep(1)
+    ans2 = input(str(questions[1]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[9]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[1]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[3]).lstrip('[\'').rstrip('\']')+'\nd) '
+                +str(answers[5]).lstrip('[\'').rstrip('\']'))
+    if ans2 in ['a','A']:
+        points += 1
+        print(f'\nCorrect!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The Answer was {answers[1]}\n{line}')
+        time.sleep(1)
+    ans3 = input(str(questions[2]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[5]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[2]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[3]).lstrip('[\'').rstrip('\']')+'\nd) '
+                +str(answers[0]).lstrip('[\'').rstrip('\']'))
+    if ans3 in ['b','B']:
+        points += 1
+        print(f'Correct!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The Answer was {answers[2]}\n{line}')
+        time.sleep(1)
+    ans4 = input(str(questions[3]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[7]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[5]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[3]).lstrip('[\'').rstrip('\']')+'\nd) '
+                +str(answers[8]).lstrip('[\'').rstrip('\']'))
+    if ans4 in ['c','C']:
+        points += 1
+        print(f'Correct!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The answer was {answers[3]}\n{line}')
+        time.sleep(1)
+    ans4 = input(str(questions[4]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[6]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[4]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[9]).lstrip('[\'').rstrip('\']')+'\nd) '
+                +str(answers[2]).lstrip('[\'').rstrip('\']'))
+    if ans4 in ['b','B']:
+        points += 1
+        print(f'Correct!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The answer was {answers[4]}\n{line}')
+        time.sleep(1)
+    ans4 = input(str(questions[5]).lstrip('[\'').rstrip('\']')+'\na) '
+                +str(answers[2]).lstrip('[\'').rstrip('\']')+'\nb) '
+                +str(answers[4]).lstrip('[\'').rstrip('\']')+'\nc) '
+                +str(answers[7]).lstrip('[\'').rstrip('\']')+'\nd) '
+                +str(answers[5]).lstrip('[\'').rstrip('\']'))
+    if ans4 in ['d','D']:
+        points += 1
+        print(f'Correct!\n{line}')
+        time.sleep(1)
+    else:
+        print(f'Whoops, got that wrong. The answer was {answers[5]}\n{line}')
+        time.sleep(1)
