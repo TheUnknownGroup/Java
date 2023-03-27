@@ -33,10 +33,13 @@ def priceIsRight2(s,s1):
         print(f'{s} CONGRATS! You won this prize')
     elif money4 <= 1000:
         print(f'{s1} CONGRATS! You won this prize')
-    trys = input('Do you want to retry?')
+    trys = input('Do you want to retry?\n')
     if trys in ['yes','Yes','y','sure']:
         print('You will go to the restart area.')
         retry()
+    else:
+        print('Welp, Thanks for playing!')
+        exit()
 def priceIsRight4(so,so1,so2,so3):
     print('Welcome to the Price is Right, everyone!\nFor the first item...'); time.sleep(2); print(line)
     money = int(input(f'What is your guess {so}?\n'))
@@ -83,6 +86,13 @@ def priceIsRight4(so,so1,so2,so3):
         print(f'{so2} CONGRATS! You won this prize')
     elif money3 <= 1000:
         print(f'{so3} CONGRATS! You won this prize')
+    trys = input('Do you want to retry?\n')
+    if trys in ['yes','Yes','y','sure']:
+        print('You will go to the restart area.')
+        retry()
+    else:
+        print('Welp, Thanks for playing!')
+        exit()
 def count():
     counts = input('Would you like to add more people or just keep it at that number?\n')
     if counts in ['add more','Add more','Add More','add More','add','more','people','yes','Yes','y','sure']:
