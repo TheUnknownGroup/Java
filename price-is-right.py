@@ -5,9 +5,10 @@ playerName = ['What is Player 1s name?', 'What is Player 2s name?', 'What is Pla
 come = ', COME ON DOWN!!!!'
 
 def retry():
-    print()
-
-
+    retryYes = input('Hello! I was told you wanted to retry this game?\n')
+    if retryYes in ['yes','Yes','y','sure']:
+        print('Well you\'re in good luck then. You\'ve come to the right place. You will now restart your game.'); time.sleep(5); print(line)
+        ask_questions()
 def priceIsRight2(s,s1):
     print('Welcome to the Price is Right, everyone!\nFor the first item...'); time.sleep(2); print(line)
     money0 = int(input(f'What is your guess {s}?\n'))
@@ -32,6 +33,10 @@ def priceIsRight2(s,s1):
         print(f'{s} CONGRATS! You won this prize')
     elif money4 <= 1000:
         print(f'{s1} CONGRATS! You won this prize')
+    trys = input('Do you want to retry?')
+    if trys in ['yes','Yes','y','sure']:
+        print('You will go to the restart area.')
+        retry()
 def priceIsRight4(so,so1,so2,so3):
     print('Welcome to the Price is Right, everyone!\nFor the first item...'); time.sleep(2); print(line)
     money = int(input(f'What is your guess {so}?\n'))
