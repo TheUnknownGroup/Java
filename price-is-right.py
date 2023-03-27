@@ -62,7 +62,7 @@ def priceIsRight4(so,so1,so2,so3):
         print(f'{so} CONGRATS! You won this prize!!')
     elif money1 >= 1000:
         print(f'{so1} CONGRATS! You won this prize!!')
-    elif money2 >= 1000:\
+    elif money2 >= 1000:
         print(f'{so2} CONGRATS! You won this prize!!')
     elif money3 >= 1000:
         print(f'{so3} CONGRATS! You won this prize!!')
