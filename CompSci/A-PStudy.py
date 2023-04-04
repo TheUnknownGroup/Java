@@ -1,6 +1,6 @@
 import time
 
-studyQuestions = ['','','','','','']
+studyQuestions = ['1) What is a program?','','','','','','','','','','','','','','','','','','']
 studyAns = ['a) ','\n','b) ','\n','c) ','\n','d) ',
             'a) ','\n','b) ','\n','c) ','\n','d) ',
             'a) ','\n','b) ','\n','c) ','\n','d) ',
