@@ -56,7 +56,7 @@ def ask_questions():
     for s in studyAns[7:14]:
         print(s, end='')
     an2 = input('\n')
-    if an2 in ['4']
+    if an2 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {studyAns[11]}'); time.sleep(1); print(line)
