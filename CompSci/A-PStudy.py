@@ -96,7 +96,7 @@ def ask_questions():
     for s in studyAns[42:49]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['b','B']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
@@ -104,7 +104,7 @@ def ask_questions():
     for s in studyAns[49:56]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['b','B']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
@@ -112,7 +112,7 @@ def ask_questions():
     for s in studyAns[56:63]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['a','A']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
@@ -128,7 +128,7 @@ def ask_questions():
     for s in studyAns[70:77]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
