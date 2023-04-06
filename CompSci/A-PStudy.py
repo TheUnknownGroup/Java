@@ -42,8 +42,6 @@ studyAns = ['a) each letter or number is represented by 1s and 0s','\n','b) 8 bi
             'a) ','\n','b) ','\n','c) identify what problems have in common','\n','d) ',
             'a) ','\n','b) ','\n','c) ','\n','d) separating details that matter from details that are not important',
             'a) ','\n','b) creating a solution with simple steps','\n','c) ','\n','d) ']
-ranges = ['28:35','35:42','42:49','49:56','56:63','63:70','70:77','77:84','84:91','91:98','98:105','105:112','112:119','119:126','126:133']
-
 def ask_questions():
     points = 0
     print(studyQuestions[0])
@@ -77,7 +75,135 @@ def ask_questions():
     if an4 in ['a','A']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns[21]}'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[21]}\n'); time.sleep(1); print(line)
+    print(studyQuestions[4])
+    for s in studyAns[28:35]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[5])
+    for s in studyAns[35:42]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['a','A']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[6])
+    for s in studyAns[42:49]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[7])
+    for s in studyAns[49:56]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[8])
+    for s in studyAns[56:63]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[9])
+    for s in studyAns[63:70]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[10])
+    for s in studyAns[70:77]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[11])
+    for s in studyAns[77:84]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[12])
+    for s in studyAns[84:91]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[13])
+    for s in studyAns[91:98]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[14])
+    for s in studyAns[98:105]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[15])
+    for s in studyAns[105:112]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[16])
+    for s in studyAns[112:119]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[17])
+    for s in studyAns[119:126]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[18])
+    for s in studyAns[126:133]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+    print(studyQuestions[19])
+    for s in studyAns[133:140]:
+        print(s, end='')
+    an5 = input('\n')
+    if an5 in ['d','D']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
 welcome = input('Welcome! Would you like to continue?\n')
 if welcome in ['yes','Yes','y','sure']:
     print('Alrighty, you\'re now going to continue to the questions area.'); time.sleep(1); print(line); ask_questions()
