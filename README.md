@@ -19,4 +19,10 @@ You can find it here:
 [Python](https://github.com/devonk15/Java/tree/python)
 >This is the area that has all of the python scripts.
 
-So far there is 5 python programs, along with a file.txt file, all of those can be found from the link [here](#python)
+So far there are many python programs, along with a file.txt file, all of those can be found from the link [here](#python)
+
+# JavaScript
+
+You can find it here:
+[JavaScript](https://github.com/devonk15/Java/tree/javascript_)
+> This is the area that has all of the javascript files
