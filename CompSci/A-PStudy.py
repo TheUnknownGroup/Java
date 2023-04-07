@@ -22,13 +22,19 @@ studyQuestions = ['> 1) What is an algorithm',
                   '> 18) What is pattern recognition?',
                   '> 19) What is abstraction (compscience terms)?',
                   '> 20) What is algorithm design?']
-studyAns = ['a) each letter or number is represented by 1s and 0s','\n','b) 8 bits or digits','\n','c) a list of steps or instructions about how to complete a task','\n','d) the thought process for creating solutions that can be carried out by a computer',
-            'a) a way to convert the program code into machine code for the computer to be able to read','\n','b) an algorithm that has been translated into code for a computer','\n','c) plain language description of the steps of an algorithm','\n','d) documents that can be displayed in a web browser',
+studyAns = ['a) each letter or number is represented by 1s and 0s','\n',
+            'b) 8 bits or digits','\n',
+            'c) a list of steps or instructions about how to complete a task','\n',
+            'd) the thought process for creating solutions that can be carried out by a computer',
+            'a) a way to convert the program code into machine code for the computer to be able to read','\n',
+            'b) an algorithm that has been translated into code for a computer','\n',
+            'c) plain language description of the steps of an algorithm','\n',
+            'd) documents that can be displayed in a web browser',
             'a) identify what different problems have in common','\n','b) creating a solution','\n','c) a combo of numbers, letters, symbols, and formatting to tell a computer what to do','\n','d) binary that is able to be processed and read by the computer',
             'a) documents that can be displayed in a web browser','\n','b) a diagram that outlines the steps in a process','\n','c) (short for binary digit): one digit (either 1 or 0)','\n','d) plain description of the steps of an algorithm',
-            'a) ','\n','b) ','\n','c) ','\n','d) a collection of web pages',
-            'a) types of software designed to run on mobile applications','\n','b) ','\n','c) ','\n','d) ',
-            'a) ','\n','b) programming languages used to make the part of a website that are seen on the screen','\n','c) ','\n','d) ',
+            'a) programming languages used to organize information and connect it to the front end','\n','b) a way to convert the program code into machine code for the computer to be able to read','\n','c) creating a solution with simple steps','\n','d) a collection of web pages',
+            'a) types of software designed to run on mobile applications','\n','b) separating details that matter from details that are not important','\n','c) each letter or number is represented by 1s and 0s','\n','d) an algorithm that has been translated into code for a computer',
+            'a) creating a solution','\n','b) programming languages used to make the part of a website that are seen on the screen','\n','c) ','\n','d) ',
             'a) ','\n','b) programming languages used to organize information and connect it to the front end','\n','c) ','\n','d) ',
             'a) each letter or number is represented by 1s and 0s','\n','b) ','\n','c) ','\n','d) ',
             'a) ','\n','b) ','\n','c) ','\n','d) code that can be read and/or displayed by the computer',
@@ -42,6 +48,7 @@ studyAns = ['a) each letter or number is represented by 1s and 0s','\n','b) 8 bi
             'a) ','\n','b) ','\n','c) identify what problems have in common','\n','d) ',
             'a) ','\n','b) ','\n','c) ','\n','d) separating details that matter from details that are not important',
             'a) ','\n','b) creating a solution with simple steps','\n','c) ','\n','d) ']
+global points
 def ask_questions():
     points = 0
     print(studyQuestions[0])
@@ -126,7 +133,7 @@ def ask_questions():
         print(f'Whoops, got that wrong. The answer was {studyAns[69]}\n'); time.sleep(1); print(line)
     print(studyQuestions[10])
     for s in studyAns[70:77]:
-        print(s, end='')
+     print(s, end='')
     an5 = input('\n')
     if an5 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
@@ -187,7 +194,7 @@ def ask_questions():
     if an5 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns[123]}\n'); time.sleep(1); print(line)
+         print(f'Whoops, got that wrong. The answer was {studyAns[123]}\n'); time.sleep(1); print(line)
     print(studyQuestions[18])
     for s in studyAns[126:133]:
         print(s, end='')
@@ -204,8 +211,33 @@ def ask_questions():
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {studyAns[135]}\n'); time.sleep(1); print(line)
-welcome = input('Welcome! Would you like to continue?\n')
-if welcome in ['yes','Yes','y','sure']:
-    print('Alrighty, you\'re now going to continue to the questions area.'); time.sleep(1); print(line); ask_questions()
-else:
-    print('Thanks for taking the time to open the quiz.'); time.sleep(1); exit()
+    print(f'You have this many points: {points} out of 20')
+    if points < 10:
+        trys = input('Would you like to retry?\n')
+        if trys in ['yes','Yes','y','sure']:
+            print('Then, lets get retrying!'); time.sleep(2); print(''); welcome()
+        else:
+            print('Well, you got a good amount of points, yes. But I think you can do better!'); time.sleep(1); exit()
+    elif points == 10:
+            print(f'YAY! You got 10 out of 20!! You made it past the underachievers.')
+            trys = input('Would you like to continue studying?\n')
+            if trys in ['yes','Yes','y','sure']:
+                print('Then, lets get studying!'); time.sleep(2); print(''); welcome()
+            else:
+                print('Well, you got a great amount of points, yes. But I think that doing some more could do you good.'); time.sleep(1); exit()
+    elif points > 10:
+        print(f'YAY! You got {points} out of 20!! You made it past the underachievers.')
+        trys = input('Would you like to continue studying?\n')
+        if trys in ['yes','Yes','y','sure']:
+            print('Then, lets get studying!'); time.sleep(2); print(''); welcome()
+        else:
+            print('Well, you got a great amount of points, yes. But I think that doing some more could do you good.'); time.sleep(1); exit()
+
+
+def welcome():
+        welcome = input('Welcome! Would you like to continue?\n')
+        if welcome in ['yes','Yes','y','sure']:
+            print('Alrighty, you\'re now going to continue to the questions area.'); time.sleep(1); print(line); ask_questions()
+        else:
+            print('Thanks for taking the time to open the quiz.'); time.sleep(1); exit()
+welcome()
