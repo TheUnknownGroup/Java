@@ -83,7 +83,7 @@ def ask_questions():
     if an5 in ['d','D']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[34]}\n'); time.sleep(1); print(line)
     print(studyQuestions[5])
     for s in studyAns[35:42]:
         print(s, end='')
@@ -91,7 +91,7 @@ def ask_questions():
     if an5 in ['a','A']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[35]}\n'); time.sleep(1); print(line)
     print(studyQuestions[6])
     for s in studyAns[42:49]:
         print(s, end='')
@@ -99,7 +99,7 @@ def ask_questions():
     if an5 in ['b','B']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[44]}\n'); time.sleep(1); print(line)
     print(studyQuestions[7])
     for s in studyAns[49:56]:
         print(s, end='')
@@ -107,7 +107,7 @@ def ask_questions():
     if an5 in ['b','B']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[51]}\n'); time.sleep(1); print(line)
     print(studyQuestions[8])
     for s in studyAns[56:63]:
         print(s, end='')
@@ -115,7 +115,7 @@ def ask_questions():
     if an5 in ['a','A']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[56]}\n'); time.sleep(1); print(line)
     print(studyQuestions[9])
     for s in studyAns[63:70]:
         print(s, end='')
@@ -123,7 +123,7 @@ def ask_questions():
     if an5 in ['d','D']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[69]}\n'); time.sleep(1); print(line)
     print(studyQuestions[10])
     for s in studyAns[70:77]:
         print(s, end='')
@@ -131,23 +131,23 @@ def ask_questions():
     if an5 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[74]}\n'); time.sleep(1); print(line)
     print(studyQuestions[11])
     for s in studyAns[77:84]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['b','B']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[79]}\n'); time.sleep(1); print(line)
     print(studyQuestions[12])
     for s in studyAns[84:91]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['a','A']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[84]}\n'); time.sleep(1); print(line)
     print(studyQuestions[13])
     for s in studyAns[91:98]:
         print(s, end='')
@@ -155,39 +155,39 @@ def ask_questions():
     if an5 in ['d','D']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[97]}\n'); time.sleep(1); print(line)
     print(studyQuestions[14])
     for s in studyAns[98:105]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[102]}\n'); time.sleep(1); print(line)
     print(studyQuestions[15])
     for s in studyAns[105:112]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['b','B']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[107]}\n'); time.sleep(1); print(line)
     print(studyQuestions[16])
     for s in studyAns[112:119]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['a','A']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[112]}\n'); time.sleep(1); print(line)
     print(studyQuestions[17])
     for s in studyAns[119:126]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[123]}\n'); time.sleep(1); print(line)
     print(studyQuestions[18])
     for s in studyAns[126:133]:
         print(s, end='')
@@ -195,15 +195,15 @@ def ask_questions():
     if an5 in ['d','D']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[132]}\n'); time.sleep(1); print(line)
     print(studyQuestions[19])
     for s in studyAns[133:140]:
         print(s, end='')
     an5 = input('\n')
-    if an5 in ['d','D']:
+    if an5 in ['b','B']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {studyAns}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {studyAns[135]}\n'); time.sleep(1); print(line)
 welcome = input('Welcome! Would you like to continue?\n')
 if welcome in ['yes','Yes','y','sure']:
     print('Alrighty, you\'re now going to continue to the questions area.'); time.sleep(1); print(line); ask_questions()
