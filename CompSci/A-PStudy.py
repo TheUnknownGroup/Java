@@ -43,8 +43,8 @@ studyAns = ['a) each letter or number is represented by 1s and 0s','\n','b) 8 bi
             'a) ','\n','b) ','\n','c) ','\n','d) separating details that matter from details that are not important',
             'a) ','\n','b) creating a solution with simple steps','\n','c) ','\n','d) ']
 global points
+points = 0
 def ask_questions():
-    points = 0
     print(studyQuestions[0])
     for s in studyAns[0:7]:
         print(s, end='')
