@@ -25,7 +25,7 @@ def ask_questions():
     if an1 in ['b','B']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAns1[0]}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {qodAns1[2]}\n'); time.sleep(1); print(line)
     print(qodQuestions[2])
     for s in qodAns2:
         print(s, end='')
@@ -33,7 +33,7 @@ def ask_questions():
     if an1 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAns2[2]}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {qodAns2[4]}\n'); time.sleep(1); print(line)
 welcome = input('Welcome! Would you like to continue?\n')
 if welcome in ['yes','Yes','y','sure']:
     print('Alrighty then, lets continue to questions area!'); time.sleep(1); ask_questions()
