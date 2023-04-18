@@ -47,7 +47,7 @@ def ask_questions():
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {qodAns3[6]}\n'); time.sleep(1); print(line)
-    print(qodQuestions)
+    print(qodQuestions[4])
     for s in qodAns4:
         print(s, end='')
     an1 = input('\n')
