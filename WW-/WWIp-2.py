@@ -5,12 +5,13 @@ line = '------'
 qodQuestions = ['> 1) During World War I, communists seized power in Russia and created a totalitarian state. How were these developments similar to post-World War I developments in other European nations?',
                 '> 2) One impact of the worldwide economic depression that occurred between World War I and World War II was the:',
                 '> 3) How did the death and destruction during World War I shape the postwar policies of France, England and the United States as they were confronted with German aggression in the 1930s?',
-                '> 4) What did the British and French do at the Munich Conference in 1938 to avoid war?']
+                '> 4) What did the British and French do at the Munich Conference in 1938 to avoid war?',
+                '> 5) Who said this quote: "a date that will live in infamy", and what did it mean?']
 qodAnswers = ['a) Nearly all European nations adopted communist forms of government after World War I.','\n','b) Communists also seized power in Great Britain and France after World War I.','\n','c) The formation of the League of Nations can be seen as a similar consolidation of power under one totalitarian governing body.','\n','d) Germany and Italy also embraced totalitarian dictatorships in response to economic, political and social problems arising out of World War I.']
 qodAns1 = ['a) decline of totalitarian leaders whose militaristic policies led to more costly wars.','\n','b) rise of totalitarian leaders worldwide who promised their citizens a return to stability through strong leadership and militaristic expansion.','\n','c) rise of totalitarian leaders worldwide whose message of isolationism and appeasement indicated a lack of concern for foreign affairs.','\n','d) failure of militaristic states like Germany, Italy and Japan to effectively build and mobilize large standing armies.']
 qodAns2 = ['a) These leaders were eager to make full use of the wide variety of new, extremely deadly weapons introduced in World War I.','\n','b) These leaders agreed to avoid the use of the wide variety of new, extremely deadly weapons introduced in World War I should fighting start again','\n','c) These leaders were reluctant to enter another major war, so they gave in to many of Hitler\'s demands.','\n','d) These leaders were sure that, should another major war start, this time Germany would be quickly and easily defeated.']
 qodAns3 = ['a) They persuaded Austria to give in to German occupation.','\n','b) They persuaded Belgium to allow the occupation of Luxembourg.','\n','c) They persuaded the Soviet Union to allow Germany to occupy Poland.','\n','d) They persuaded the Czechs to surrender the Sudetenland']
-qodAns4 = ['a) ','\n','b) ','\n','c) ','\n','d) ']
+qodAns4 = ['a) Winston Churchill — Requesting U.S. military and economic aid','\n','b) Dwight D. Eisenhower — Announcing the D-Day invasion of France','\n','c) Joseph Stalin — Proclaiming Russia’s decisive victory at Stalingrad','\n','d) Franklin D. Roosevelt — Asking Congress to declare war on Japan']
 global points 
 points = 0
 def ask_questions():
@@ -50,10 +51,10 @@ def ask_questions():
     for s in qodAns4:
         print(s, end='')
     an1 = input('\n')
-    if an1 in ['']:
+    if an1 in ['d','D']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAns4}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {qodAns4[6]}\n'); time.sleep(1); print(line)
 
 
 welcome = input('Welcome! Would you like to continue?\n')
