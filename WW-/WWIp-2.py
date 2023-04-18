@@ -10,6 +10,7 @@ qodAnswers = ['a) Nearly all European nations adopted communist forms of governm
 qodAns1 = ['a) decline of totalitarian leaders whose militaristic policies led to more costly wars.','\n','b) rise of totalitarian leaders worldwide who promised their citizens a return to stability through strong leadership and militaristic expansion.','\n','c) rise of totalitarian leaders worldwide whose message of isolationism and appeasement indicated a lack of concern for foreign affairs.','\n','d) failure of militaristic states like Germany, Italy and Japan to effectively build and mobilize large standing armies.']
 qodAns2 = ['a) These leaders were eager to make full use of the wide variety of new, extremely deadly weapons introduced in World War I.','\n','b) These leaders agreed to avoid the use of the wide variety of new, extremely deadly weapons introduced in World War I should fighting start again','\n','c) These leaders were reluctant to enter another major war, so they gave in to many of Hitler\'s demands.','\n','d) These leaders were sure that, should another major war start, this time Germany would be quickly and easily defeated.']
 qodAns3 = ['a) They persuaded Austria to give in to German occupation.','\n','b) They persuaded Belgium to allow the occupation of Luxembourg.','\n','c) They persuaded the Soviet Union to allow Germany to occupy Poland.','\n','d) They persuaded the Czechs to surrender the Sudetenland']
+qodAns4 = ['a) ','\n','b) ','\n','c) ','\n','d) ']
 global points 
 points = 0
 def ask_questions():
@@ -45,6 +46,14 @@ def ask_questions():
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {qodAns3[6]}\n'); time.sleep(1); print(line)
+    print(qodQuestions)
+    for s in qodAns4:
+        print(s, end='')
+    an1 = input('\n')
+    if an1 in ['']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {qodAns4}\n'); time.sleep(1); print(line)
 
 
 welcome = input('Welcome! Would you like to continue?\n')
