@@ -23,8 +23,8 @@ qodQuestions = ['> 1) During World War I, communists seized power in Russia and 
                 '> 5) Who said this quote: "a date that will live in infamy", and what did it mean?']
 qodAnswers = ['a) Nearly all European nations adopted communist forms of government after World War I.','\n','b) Communists also seized power in Great Britain and France after World War I.','\n','c) The formation of the League of Nations can be seen as a similar consolidation of power under one totalitarian governing body.','\n','d) Germany and Italy also embraced totalitarian dictatorships in response to economic, political and social problems arising out of World War I.','a) decline of totalitarian leaders whose militaristic policies led to more costly wars.','\n','b) rise of totalitarian leaders worldwide who promised their citizens a return to stability through strong leadership and militaristic expansion.','\n','c) rise of totalitarian leaders worldwide whose message of isolationism and appeasement indicated a lack of concern for foreign affairs.','\n','d) failure of militaristic states like Germany, Italy and Japan to effectively build and mobilize large standing armies.','a) These leaders were eager to make full use of the wide variety of new, extremely deadly weapons introduced in World War I.','\n','b) These leaders agreed to avoid the use of the wide variety of new, extremely deadly weapons introduced in World War I should fighting start again','\n','c) These leaders were reluctant to enter another major war, so they gave in to many of Hitler\'s demands.','\n','d) These leaders were sure that, should another major war start, this time Germany would be quickly and easily defeated.','a) They persuaded Austria to give in to German occupation.','\n','b) They persuaded Belgium to allow the occupation of Luxembourg.','\n','c) They persuaded the Soviet Union to allow Germany to occupy Poland.','\n','d) They persuaded the Czechs to surrender the Sudetenland','a) Winston Churchill — Requesting U.S. military and economic aid','\n','b) Dwight D. Eisenhower — Announcing the D-Day invasion of France','\n','c) Joseph Stalin — Proclaiming Russia’s decisive victory at Stalingrad','\n','d) Franklin D. Roosevelt — Asking Congress to declare war on Japan']
 global points 
-points = 0
 def ask_questions():
+    points = 0
     print(qodQuestions[0])
     for s in qodAnswers[0:7]:
         print(s, end='')
@@ -65,8 +65,9 @@ def ask_questions():
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {qodAnswers[34]}\n'); time.sleep(1); print(line); point_counter()
-    return points
-def point_counter(points):
+
+
+def point_counter():
     if points >= 1:
         print(f'You got {points} points!')
     elif points == 1:
