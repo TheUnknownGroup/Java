@@ -64,12 +64,13 @@ def ask_questions():
     if an1 in ['d','D']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAnswers[34]}\n'); time.sleep(1); print(line)
-    
+        print(f'Whoops, got that wrong. The answer was {qodAnswers[34]}\n'); time.sleep(1); print(line); point_counter()
+    return points
+def point_counter(points):
     if points >= 1:
         print(f'You got {points} points!')
     elif points == 1:
-        print('You got 1 point')
+        print(f'You got {points} point :( ')
     elif points <= 1:
         print(f'You got {points} points :( ')
         
