@@ -48,7 +48,7 @@ def ask_questions():
     if an1 in ['c','C']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAns2[18]}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {qodAnswers[18]}\n'); time.sleep(1); print(line)
     print(qodQuestions[3])
     for s in qodAnswers[21:28]: 
         print(s, end='')
@@ -56,7 +56,7 @@ def ask_questions():
     if an1 in ['d','D)']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAns3[27]}\n'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {qodAnswers[27]}\n'); time.sleep(1); print(line)
     print(qodQuestions[4])
     for s in qodAnswers[28:35]:
         print(s, end='')
@@ -64,8 +64,15 @@ def ask_questions():
     if an1 in ['d','D']:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAns4[35]}\n'); time.sleep(1); print(line)
-
+        print(f'Whoops, got that wrong. The answer was {qodAnswers[34]}\n'); time.sleep(1); print(line)
+    
+    if points >= 1:
+        print(f'You got {points} points!')
+    elif points == 1:
+        print('You got 1 point')
+    elif points <= 1:
+        print(f'You got {points} points :( ')
+        
 
 welcome = input('Welcome! Would you like to continue?\n')
 if welcome in ['yes','Yes','y','sure']:
