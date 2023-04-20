@@ -65,6 +65,7 @@ def ask_questions():
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {qodAnswers[34]}\n'); time.sleep(1); print(line)
+    time.sleep(1)
     point_counter(points)
     return points
 
