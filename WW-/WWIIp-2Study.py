@@ -71,7 +71,7 @@ def ask_questions():
 
 
 def point_counter(points):
-    if points >= 1:
+    if points > 1:
         print(f'You got {points} points!')
     elif points == 1:
         print(f'You got {points} point :( ')
