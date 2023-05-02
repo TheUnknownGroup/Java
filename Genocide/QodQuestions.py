@@ -17,7 +17,7 @@ def ask_questions():
     if an1 in letters[6:8]:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAnswers[6]}')
+        print(f'Whoops, got that wrong. The answer was {qodAnswers[6]}'); time.sleep(1); print(line)
 
 
 def try_again():
