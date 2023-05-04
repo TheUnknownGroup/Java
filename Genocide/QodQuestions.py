@@ -33,6 +33,7 @@ def try_again():
     times = 1
     welcome(times)
 
+
 def welcome(times):
     welcome = input('Welcome! Would you like to continue?\n')
     if welcome in yeses:
@@ -46,6 +47,7 @@ def welcome(times):
                 break
             else:
                 continue
+
 
 def start():
     global times
