@@ -4,8 +4,9 @@ line = '------'
 
 letters = ['a','A','b','B','c','C','d','D']
 yeses = ['yes','Yes','y','sure']
-qodQuestions = ['> 1) During World War I, Russia attacked the region on Turkey\'s northern border. The area was home to millions of Armenians, who were accused by the Turkish leaders of helping the Russians.\n\nHow did Turkish leaders respond to this perceived threat?','> 2) ']
-qodAnswers = ['a) They agreed to grant citizenship to all Armenians in exchange for loyalty.','\n','b) They required all Armenians to take a loyalty oath and join the Turkish army.','\n','c) They signed a treaty with Russia that surrendered the region on Turkey\'s northern border.','\n','d)  They forcibly removed Armenians from the area, resulting in the death of about 600,000 Armenians.']
+qodQuestions = ['> 1) During World War I, Russia attacked the region on Turkey\'s northern border. The area was home to millions of Armenians, who were accused by the Turkish leaders of helping the Russians.\n\nHow did Turkish leaders respond to this perceived threat?','> 2) The Holocaust in Europe and the treatment of Armenians in the Ottoman Empire have both been cited as examples of:']
+qodAnswers = ['a) They agreed to grant citizenship to all Armenians in exchange for loyalty.','\n','b) They required all Armenians to take a loyalty oath and join the Turkish army.','\n','c) They signed a treaty with Russia that surrendered the region on Turkey\'s northern border.','\n','d) They forcibly removed Armenians from the area, resulting in the death of about 600,000 Armenians.',
+              'a) divine right','\n','b) imperialism','\n','c) genocide','\n','d) socialism']
 
 def ask_questions():
     global points
@@ -18,7 +19,15 @@ def ask_questions():
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
         print(f'Whoops, got that wrong. The answer was {qodAnswers[6]}'); time.sleep(1); print(line)
-
+    print(qodQuestions[1])
+    for s in qodAnswers[7:14]:
+        print(s, end='')
+    an1 = input('\n')
+    if an1 in letters[4:6]:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {qodAnswers[11]}')
+    
 
 def try_again():
     times = 1
