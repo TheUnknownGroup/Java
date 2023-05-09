@@ -4,9 +4,12 @@ line = '------'
 
 letters = ['a','A','b','B','c','C','d','D']
 yeses = ['yes','Yes','y','sure']
-qodQuestions = ['> 1) During World War I, Russia attacked the region on Turkey\'s northern border. The area was home to millions of Armenians, who were accused by the Turkish leaders of helping the Russians.\n\nHow did Turkish leaders respond to this perceived threat?','> 2) The Holocaust in Europe and the treatment of Armenians in the Ottoman Empire have both been cited as examples of:','3) “First they came for the Jews, and I did not speak out because I was not a Jew. Then they came for the communists, and I did not speak out because I was not a communist. Then they came for the trade unionists, and I did not speak out because I was not a trade unionist. And they came for me, and there was no one left to speak out for me.”\n- Pastor Martin Niemoeller\n\n“What harms the victim the most is not the cruelty of the oppressor, but the silence of the bystander.”\n- Elie Wiesel, Holocaust survivor\n\nWhat are the authors suggesting in the quotes?']
+qodQuestions = ['> 1) During World War I, Russia attacked the region on Turkey\'s northern border. The area was home to millions of Armenians, who were accused by the Turkish leaders of helping the Russians.\n\nHow did Turkish leaders respond to this perceived threat?',
+                '> 2) The Holocaust in Europe and the treatment of Armenians in the Ottoman Empire have both been cited as examples of:',
+                '> 3) “First they came for the Jews, and I did not speak out because I was not a Jew. Then they came for the communists, and I did not speak out because I was not a communist. Then they came for the trade unionists, and I did not speak out because I was not a trade unionist. And they came for me, and there was no one left to speak out for me.”\n- Pastor Martin Niemoeller\n\n“What harms the victim the most is not the cruelty of the oppressor, but the silence of the bystander.”\n- Elie Wiesel, Holocaust survivor\n\nWhat are the authors suggesting in the quotes?']
 qodAnswers = ['a) They agreed to grant citizenship to all Armenians in exchange for loyalty.','\n','b) They required all Armenians to take a loyalty oath and join the Turkish army.','\n','c) They signed a treaty with Russia that surrendered the region on Turkey\'s northern border.','\n','d) They forcibly removed Armenians from the area, resulting in the death of about 600,000 Armenians.',
-              'a) divine right','\n','b) imperialism','\n','c) genocide','\n','d) socialism']
+              'a) divine right','\n','b) imperialism','\n','c) genocide','\n','d) socialism',
+              'a) Nothing could have been done to stop the Holocaust once it started.','\n','b) Nazi officials were only following the orders of their superiors when they engaged in the brutal oppression of Jews and other “enemies of the state.”','\n','c) The average German citizen played no role in the Holocaust.','\n','d) Because many Germans did little to oppose the Nazi persecution of Jews, the brutality of the Holocaust grew more severe as time went on.']
 
 def ask_questions():
     global points
@@ -26,8 +29,16 @@ def ask_questions():
     if an1 in letters[4:6]:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qodAnswers[11]}')
-    
+        print(f'Whoops, got that wrong. The answer was {qodAnswers[11]}'); time.sleep(1); print(line)
+    print(qodQuestions[2])
+    for s in qodAnswers[14:21]:
+        print(s, end='')
+    an1 = input('\n')
+    if an1 in letters[6:8]:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {qodAnswers[20]}'); time.sleep(1); print(line)
+
 
 def try_again():
     times = 1
