@@ -1,12 +1,13 @@
 import time
 
-letters = ['']
+letters = ['a','A','b','B','c','C','d','D']
 
 line = '------'
 yeses = ['yes','Yes','y','sure']
 
-qod = ['']
-qod_a = ['']
+qod = ['> 1) A biography is an example of this type of source?','> 2) A historian is also which of these people?']
+qod_a = ['a) First Source','\n','b) Primary Source','\n','c) Secondary Source','\n','d) Third Source',
+         'a) Detective','\n','b) ','\n','c) Police Officer','\n','d) ']
 
 welcome = 'Welcome! Would you like to continue?'
 
@@ -14,13 +15,21 @@ def ask_questions():
     global points
     points = 0
     print(qod[0])
-    for s in qod_a:
+    for s in qod_a[0:7]:
         print(s, end='')
     an1 = input('\n')
-    if an1 in letters:
+    if an1 in letters[4:6]:
         print('Correct!\n'); time.sleep(1); print(line); points += 1
     else:
-        print(f'Whoops, got that wrong. The answer was {qod_a}'); time.sleep(1); print(line)
+        print(f'Whoops, got that wrong. The answer was {qod_a[4]}'); time.sleep(1); print(line)
+    print(qod[1])
+    for s in qod_a[7:14]:
+        print(s, end='')
+    an1 = input('\n')
+    if an1 in letters[2:4]:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
+    else:
+        print(f'Whoops, got that wrong. The answer was {qod_a[9]}'); time.sleep(1); print(line)
 
 
 def try_again():
