@@ -13,7 +13,7 @@ welcome = 'Welcome! Would you like to continue?'
 def ask_questions():
     global points
     points = 0
-    print(qod)
+    print(qod[0])
     for s in qod_a:
         print(s, end='')
     an1 = input('\n')
