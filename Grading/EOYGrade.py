@@ -5,8 +5,6 @@ def ask_grading():
     gradingscale = int(input('Are you looking to grade one sem., or both?\nType 1 (for 1 sem.) or Type 2 (for both).\n'))
 ask_grading()
 
-
-
 if gradingscale == 1:
     q1 = float(input('Quarter 1 Grade: ')); q2 = float(input('Quarter 2 Grade: ')); s1 = q1+q2; s1grade = s1/2; eoygrade = s1grade
 elif gradingscale == 2:
