@@ -19,16 +19,58 @@ footer {
     font-family: cursive;
     font-size: 15px;
 }
-div.a {
-    width: 500px;
-    height: 25px;
-    background: red;
-    position: relative;
-    animation: block 10s infinite
+* {
+    box-sizing: border-box;
 }
-
-@keyframes block {
-    0% {left: 0px;}
-    50% {left: 1360px;}
-    100% {left: 0px;}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.lower {
+    position: relative;
+    animation: move 5s infinite;
+}
+@keyframes move {
+    0% {top: 10px;}
+    50% {top: 129px;}
+    100% {top: 10px;}
+}
+#container {
+    position: relative;
+    overflow: hidden;
+}
+  
+#box {
+    width: 805px;
+    height: 65px;
+    background: #a9a7d6;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: left 5s, width 7s ease, background 4s ease;
+    cursor: pointer;
+    z-index: 2;
+}
+#box.right {
+    left: calc(100% - 100px);
+    background: #9f9dd1;
+    width: 100px;
+}
+#content {
+    text-align: center;
+    position: relative;
+}
+#content #paragraph {
+    opacity: 0;
+    transition: opacity 6s;
+}
+#box.right ~ #content #paragraph {
+    opacity: 1;
+    pointer-events: none;
 }

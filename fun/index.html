@@ -9,12 +9,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&family=Yuji+Hentaigana+Akebono&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div style="text-align: center;"><img src="./hazetech.png" height="400" width="1859"></div>
+        <div class="row">
+            <div class="column">
+                <img src="hazetech.png" alt="OverView" style="width:100%">
+            </div>
+            <div class="column lower">
+                <img src="hazetechbanner.jpg" alt="Banner" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="hazetech.png" alt="OverView" style="width:100%">
+            </div>
+        </div>
         <h1>Welcome!</h1>
-        <div class="a"></div>
-        <p>
-            Ah, You've found the HazeTech Website. I thought I hid this really well, I guess not.
-        </p>
+        <div id="container">
+            <div id="box" onclick="togglePosition()"></div>
+            <div id="content">
+              <p id="paragraph">Ah, You've found the HazeTech Website. I thought I hid this really well, I guess not.</p>
+            </div>
+          </div>
+        <script>
+            var box = document.getElementById("box");
+            var isBoxRight = false;
+
+            function togglePosition() {
+                box.classList.toggle("right");
+                isBoxRight = !isBoxRight;
+            }
+        </script>  
         <footer>This is the HazeTech Official Website. Created By: TheGremlinX</footer>
     </body>
 </html>
