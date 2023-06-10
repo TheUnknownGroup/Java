@@ -1,5 +1,7 @@
 body {
-    background-color: #a9a7d6
+    background-color: #a9a7d6;
+    -webkit-user-select: none;
+    user-select: none;
 }
 h1 {
     font-family: 'Yuji Hentaigana Akebono', cursive;
@@ -9,7 +11,7 @@ h1 {
 p {
     text-align: center;
     font-family: 'Waiting for the Sunrise', cursive;
-    font-size: 40px;
+    font-size: 25px;
     text-overflow: clip;
     font-weight: bold;
 }
