@@ -19,3 +19,16 @@ footer {
     font-family: cursive;
     font-size: 15px;
 }
+div.a {
+    width: 500px;
+    height: 25px;
+    background: red;
+    position: relative;
+    animation: block 10s infinite
+}
+
+@keyframes block {
+    0% {left: 0px;}
+    50% {left: 1360px;}
+    100% {left: 0px;}
+}
