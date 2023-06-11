@@ -4,13 +4,13 @@ body {
     user-select: none;
 }
 h1 {
-    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
     text-align: center;
     font-size: 70px;
 }
 p {
     text-align: center;
-    font-family: 'Waiting for the Sunrise', cursive;
+    font-family: 'Noto Sans JP', cursive;
     font-size: 25px;
     text-overflow: clip;
     font-weight: bold;
