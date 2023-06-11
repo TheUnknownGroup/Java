@@ -53,7 +53,7 @@ footer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: left 5s, width 7s ease, background 4s ease;
+    transition: left 5s, width 7s ease, background 6s ease;
     cursor: pointer;
     z-index: 2;
 }
