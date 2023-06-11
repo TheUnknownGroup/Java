@@ -17,6 +17,7 @@
       }
     ],
     "no-inline-styles": "off",
-    "detect-css-reflows/layout": "off"
+    "detect-css-reflows/layout": "off",
+    "disown-opener": "off"
   }
 }
