@@ -8,6 +8,11 @@ h1 {
     text-align: center;
     font-size: 70px;
 }
+h2 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    text-align: center;
+    font-size: 30px;
+}
 p {
     text-align: center;
     font-family: 'Noto Sans JP', cursive;
@@ -73,3 +78,33 @@ footer {
     opacity: 1;
     pointer-events: none;
 }
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    position: relative;
+    width: 455px;
+    height: 47px;
+    background-color: #a9a7d6;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .box a {
+    position: relative;
+    color: #000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .box:hover a {
+    opacity: 1;
+  } 
