@@ -11,7 +11,7 @@ def new2():
     inp = input(f'{line}\nYour choice: ')
     thanks = f'Thanks for choosing {inp}'
     if inp is ['a', 'b', 'c', 'd', 'e']:
-        print(thanks)
+        print(thanks); exit()
     elif inp not in ['a', 'b', 'c', 'd', 'e']:
         print('Please choose: a, b, c, d, e'); time.sleep(1); new()
 
