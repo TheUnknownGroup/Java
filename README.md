@@ -1,11 +1,11 @@
-# Main
+## Main
 
 Welcome! This is the github I created in order to store all of the Java, JavaScript, and Python programs that I create
 
 You can find it here:
 [Main](https://github.com/devonk15/Java/tree/main)
 > This is the main branch!
-# Java
+## Java
 
 You can find it here:
 [Java](https://github.com/devonk15/Java/tree/java)
@@ -13,7 +13,7 @@ You can find it here:
 
 So far there is 3 java programs, all of those can be found from the link [here](#java)
 
-# Python 
+## Python 
 
 You can find it here:
 [Python](https://github.com/devonk15/Java/tree/python)
@@ -21,7 +21,7 @@ You can find it here:
 
 So far there are many python programs, along with a file.txt file, all of those can be found from the link [here](#python)
 
-# JavaScript
+## JavaScript
 
 You can find it here:
 [JavaScript](https://github.com/devonk15/Java/tree/javascript_)
