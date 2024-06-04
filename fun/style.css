@@ -84,9 +84,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .box {
+}
+.box {
     position: relative;
     width: 455px;
     height: 47px;
@@ -96,15 +95,15 @@ footer {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
-  
-  .box a {
+}
+
+.box a {
     position: relative;
     color: #000;
     opacity: 0;
     transition: opacity 0.5s ease;
-  }
-  
-  .box:hover a {
+}
+
+.box:hover a {
     opacity: 1;
-  } 
+}
