@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class trivia
 {
+    @SuppressWarnings({ "resource", "unused" })
     public static void main(String[] args){
         /* Trivia Game */
 
