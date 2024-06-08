@@ -1,29 +1,7 @@
-## Main
+## Welcome!
 
-Welcome! This is the github I created in order to store all of the Java, JavaScript, and Python programs that I create
+This is the repository that holds any and all code that has been made by [@devonk15](https://github.com/devonk15) in the past and has been uploaded here. 
 
-You can find it here:
-[Main](https://github.com/devonk15/Java/tree/main)
-> This is the main branch!
+Anyone is more than welcome to check each and all Python and HTML files to have inspiration or build onto them.
 
-## Java
-
-You can find it here:
-[Java](https://github.com/devonk15/Java/tree/java)
->This is the area that has all of the java programs.
-
-So far there is 3 java programs, all of those can be found from the link [here](#java)
-
-## Python
-
-You can find it here:
-[Python](https://github.com/devonk15/Java/tree/python)
->This is the area that has all of the python scripts.
-
-So far there are many python programs, along with a file.txt file, all of those can be found from the link [here](#python)
-
-## JavaScript
-
-You can find it here:
-[JavaScript](https://github.com/devonk15/Java/tree/javascript_)
-> This is the area that has all of the javascript files
+**NOTE:** This repository can be treated as an archive, and is not limited to someone taking this code and building onto, or modifying said code. If you do decide to build onto &/or modify any code, please do not distribute this without any credits to [@devonk15](https://github.com/devonk15).
