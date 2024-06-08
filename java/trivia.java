@@ -11,7 +11,7 @@ public class trivia
         
         String question1="What is 2+2?";
 
-        int points=0;
+        int points = 0;
 
         Scanner input = new Scanner(System.in);
         System.out.println(welcome);
