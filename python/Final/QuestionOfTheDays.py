@@ -9,7 +9,8 @@ qod = ['> 1) A biography is an example of this type of source?','> 2) A historia
 qod_a = ['a) First Source','\n','b) Primary Source','\n','c) Secondary Source','\n','d) Third Source',
          'a) Detective','\n','b) ','\n','c) Police Officer','\n','d) ']
 
-welcome = 'Welcome! Would you like to continue?'
+global welcome3
+welcome3 = 'Welcome! Would you like to continue?'
 
 def ask_questions():
     global points
@@ -38,8 +39,8 @@ def try_again():
 
 
 def welcome(times):
-    welcome = input('Welcome! Would you like to continue?\n')
-    if welcome in yeses:
+    welcome2 = input(f'{welcome3}\n')
+    if welcome2 in yeses:
         print('Alrighty, then lets get started!'); times = 1; time.sleep(1); print(line); ask_questions()
     else:
         while times != 1:
