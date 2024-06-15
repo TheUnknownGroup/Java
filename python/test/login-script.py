@@ -2,6 +2,9 @@ import time
 import webbrowser as web
 line = '------'
 
+count1 = 0
+count2 = 0
+
 i1 = 1
 i2 = 0
 
@@ -13,8 +16,7 @@ password = 'ddr5lover#5'
 welcome = 'Welcome! Please login with the correct credentials.'
 
 def red(ans1, ans2):
-    count1 = 0
-    count2 = 0
+
     if ans1 == i1:
         count1 += 1
     elif ans1 == i2:
@@ -23,8 +25,13 @@ def red(ans1, ans2):
         count1 += 1
     elif ans2 == i2:
         count2 += 1
+        
+    time.sleep(1)
+    
+    if count1 == 1:
+        print('Incorrect password or username. Please try again.'); start()
     elif count1 == 2:
-        print('Incorrect password &/or username. Please Try Again.')
+        print('Incorrect password & username. Please Try Again.'); start()
     elif count2 == 2:
         print('Logging in...'); time.sleep(0.5); web.open("https://theunknowngroup.github.io"); exit()
 
@@ -62,6 +69,5 @@ def login():
 
 
 def start():
-    global ans1, ans2; login()
-    global count1, count2
+    global ans1; global ans2; login()
 start()
