@@ -1,11 +1,14 @@
 import time
 # import openpyxl
 
+global points
+points = 0
+
 # This is used so then we can seperate the questions, answers & beginning prompts.
 line = '------'
 
 # This is going to be used for the beginning prompt inputs.
-yeses = ['yes', 'y', 'Yes', 'Y', 'yeah', 'Yeah', 'yeah', 'yup', 'Yup', 'yep', 'Yep', 'sure', 'Sure']
+yeses = ['yes', 'y', 'Yes', 'Y', 'yeah', 'Yeah', 'yup', 'Yup', 'yep', 'Yep', 'sure', 'Sure']
 nos = ['no', 'n', 'No', 'N', 'nope', 'Nope']
 
 # Beginning prompts for the user.
@@ -47,13 +50,22 @@ answers = ['a) Giles Corey accuses that Thomas Putnam has been killing his neigh
            'a) She is asked to faint, but she can\'t', '\n', 'b) He needs a lawyer', '\n', 'c) Abigails evades or attacks.', '\n', 'd) They will arrest and question all 91 people.',
            'a) She laughs and blames John Proctor.', '\n', 'b) Mary\'s appearannce might be that Satan is trying to overthrow the court.', '\n', 'c) She pretends the bird is attacking.', '\n', 'd) If you good, then no harm will come. If you do wrong, then bad things will come to you.',
            'a) Elizabeth is called to back up Proctor\'s statements.', '\n', 'b) He has been accues of trying to overthrow the court.', '\n', 'c) Giles Corey accuses that Thomas Putnam has been killing his neighbors to get land.', '\n', 'd) She is asked to faint, but she can\'t.', 
-           'a) They will arrest and question all 91 people.', '\n', 'b) Abigail evades or attacks.', '\n', 'c) She was condemned to hang because she was accused to witchcraft.', '\n', 'd)',
-           'a)', '\n', 'b)', '\n', 'c) John calls Abigail a *****. He is basically confessing that he committed adultery.', '\n', 'd)',
-           'a)', '\n', 'b)', '\n', 'c)', '\n', 'd) Elizabeth is called to back up Proctor\'s statements, but she lies and denies it.',
-           'a)', '\n', 'b)', '\n', 'c) She pretends the bird is attacking.', '\n', 'd)',
-           'a) She laughs and blames John Proctor.', '\n', 'b)', '\n', 'c)', '\n', 'd)',
-           'a)', '\n', 'b) He means that there is no god in Salem anymore.', '\n', 'c)', '\n', 'd)',
-           'a)', '\n', 'b)', '\n', 'c)', '\n', 'd) Rev. Hale quits the court when John Proctor gets arrested.'] 
+           'a) They will arrest and question all 91 people.', '\n', 'b) Abigail evades or attacks.', '\n', 'c) She was condemned to hang because she was accused to witchcraft.', '\n', 'd) Rev. Hale quits the court when John Proctor gets arrested.',
+           'a) She laughs and blames John Proctor.', '\n', 'b) He needs a lawyer.', '\n', 'c) John calls Abigail a *****. He is basically confessing that he committed adultery.', '\n', 'd) Word of mouth from an honest man. He doesn\' want the person to go to jail.',
+           'a) She pretends the bird is attacking.', '\n', 'b) He doesn\' go to church and plows on Sundays.', '\n', 'c) John calls Abigail a *****. He is basically confessing that he committed adultery.', '\n', 'd) Elizabeth is called to back up Proctor\'s statements, but she lies and denies it.',
+           'a) Elizabeth is pregnant and that she has one year to live for the baby.', '\n', 'b) He means that there is no God in Salem anymore.', '\n', 'c) She pretends the bird is attacking.', '\n', 'd) He needs a lawyer.', 
+           'a) She laughs and blames John Proctor.', '\n', 'b) He needs a lawyer', '\n', 'c) He doesn\'t go to church and plows on Sundays.', '\n', 'd) Elizabeth is pregnant and that she has one year to live for the baby.',
+           'a) Rev. Hale quits the court when John Proctor gets arrested.', '\n', 'b) He means that there is no God in Salem anymore.', '\n', 'c) She was condemned to hang because was accused to witchcraft.', '\n', 'd) He needs a lawyer.',
+           'a) He gets arrested and charged with contempt of court.', '\n', 'b) He doesn\'t go to church and plows on Sundays.', '\n', 'c) He means that there is no God in Salem anymore.', '\n', 'd) Rev. Hale quits the court when John Proctor gets arrested.'] 
+
+def ask_questions():
+    print(welcome); time.sleep(1)
+    print(questions[0])
+    for s in answers[0:7]:
+        print(s, end='')
+    an1 = input('\n')
+    if an1 in ['a','A']:
+        print('Correct!\n'); time.sleep(1); print(line); points += 1
 
 def start():
     print(ques1); time.sleep(1)
